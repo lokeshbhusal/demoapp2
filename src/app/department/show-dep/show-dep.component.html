@@ -20,13 +20,13 @@
 
             <ng-container matColumnDef= "DepartmentID">
                 <mat-header-cell *matHeaderCellDef>DepartmentID</mat-header-cell>
-                <mat-header-cell *matCellCellDef="let element">{{element.DepartmentID}}</mat-header-cell>
+                <mat-header-cell *matCellDef = "let element">{{element.DepartmentID}}</mat-header-cell>
             </ng-container>
 
 
             <ng-container matColumnDef= "DepartmentName">
-                <mat-header-cell *matHeaderCellDef>DepartmentName</mat-header-cell>
-                <mat-header-cell *matCellCellDef="let element">{{element.DepartmentName}}</mat-header-cell>
+                <mat-header-cell *matHeaderCellDef >DepartmentName</mat-header-cell>
+                <mat-header-cell *matCellDef = "let element">{{element.DepartmentName}}</mat-header-cell>
             </ng-container>
             
             

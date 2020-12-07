@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatInputModule} from '@angular/material/input';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MatTableModule} from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
@@ -53,7 +54,8 @@ import { DepartmentService } from 'src/app/services/department.service';
     BrowserAnimationsModule,
     MatTableModule, 
     MatIconModule, 
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
   providers: [EmployeeService, DepartmentService],
   bootstrap: [AppComponent]
