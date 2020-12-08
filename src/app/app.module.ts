@@ -15,6 +15,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule} from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {MatSortModule} from '@angular/material/sort';
+import {MatDialogModule} from '@angular/material/dialog';
+
+
 
 
 import { EmployeeComponent } from './employee/employee.component';
@@ -55,9 +59,12 @@ import { DepartmentService } from 'src/app/services/department.service';
     MatTableModule, 
     MatIconModule, 
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSortModule,
+    MatDialogModule
   ],
   providers: [EmployeeService, DepartmentService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[AddDepComponent]
 })
 export class AppModule { }

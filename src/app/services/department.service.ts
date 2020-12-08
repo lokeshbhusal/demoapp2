@@ -11,9 +11,15 @@ export class DepartmentService {
   constructor( private http:HttpClient) { }
 
 
-  readonly APIUrl = "http://localhost:4200/api";
+  formData: Department;
+
+
+  readonly APIUrl = "http://gridecoreapp-env.peird25tbn.us-east-1.elasticbeanstalk.com/api";
 
   getDepList(): Observable<Department[]>{
     return this.http.get<Department[]>(this.APIUrl +'/department');
+  }
+  addDepartment(dep:Department){
+    return this.http.post(this.APIUrl+'/Department',dep)
   }
 }
